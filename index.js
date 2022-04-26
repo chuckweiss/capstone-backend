@@ -11,7 +11,7 @@ const PORT = 5000;
 app.use(express.json());
 
 const database = 'capstone'
-const uri = `mongodb+srv://chuck:Hello1234@cluster0.izjuq.mongodb.net/${database}?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://client:Hello1234@cluster0.izjuq.mongodb.net/${database}?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
