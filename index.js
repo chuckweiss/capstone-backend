@@ -10,8 +10,6 @@ const PORT = 5000;
 
 app.use(express.json());
 
-const password = priv.password;
-const database = priv.database;
 const uri = `mongodb+srv://chuck:Hello1234@cluster0.izjuq.mongodb.net/capstone?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
